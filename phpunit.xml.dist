@@ -16,7 +16,7 @@
     backupStaticProperties="false"
 >
     <testsuites>
-        <testsuite name="Wezzomart Test Suite">
+        <testsuite name="Skeleton Test Suite">
             <directory>tests</directory>
         </testsuite>
     </testsuites>
