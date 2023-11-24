@@ -2,11 +2,11 @@
 
 declare(strict_types=1);
 
-namespace Wezzomart\Core\Tests;
+namespace Skeleton\Skeleton\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use Wezzomart\Core\SkeletonServiceProvider;
+use Skeleton\Skeleton\SkeletonServiceProvider;
 
 use function class_basename;
 use function config;
@@ -18,7 +18,7 @@ final class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Wezzomart\\Core\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
+            fn (string $modelName) => 'Skeleton\\Skeleton\\Database\\Factories\\' . class_basename($modelName) . 'Factory'
         );
     }
 
